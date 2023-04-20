@@ -1,5 +1,4 @@
 <a name="top"></a>
-
 # Working with helper classes
 
 While coding in SAP TM, data can be brought using tables, retrieve by association, and query; the easier way would be to use helper classes and methods provided by SAP.
