@@ -96,7 +96,7 @@ CALL METHOD /scmtms/cl_bupa_helper=>get_bp_address
   EXPORTING
     it_bupa_key  = bp_key           " Key Table
 *   it_bupa_adnr =                  " Link between BP and addresses (e.g. document specific)
-    iv_printform =    'X'           " Printform shall be read
+    iv_printform = abap_true        " Printform shall be read
   RECEIVING
     rt_address   = data(lt_data)).
 ````
@@ -122,7 +122,7 @@ To check  specific CDS view/ DB table, navigate using the below path:
 
 Tcode - BOBX -> open the BO - /SCMTMS/BUPA -> go to Node Structure -> check  specific Data Accesses related to BP
 
-Ex: GET SCAC code details as mentioned below:
+Ex: Fnd SCAC code details from table as below:
 
 <img src="https://user-images.githubusercontent.com/87542870/233247073-fa099d5a-ecd3-4121-aa66-d1d99a13a9cf.png" width="300" height="200">
 <p align="right">(<a href="#top">back to top</a>)</p>
